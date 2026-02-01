@@ -1,18 +1,22 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { IoNotificationsOutline, IoSettingsOutline, IoSearch } from "react-icons/io5";
+import {
+  IoNotificationsOutline,
+  IoSettingsOutline,
+  IoSearch,
+} from "react-icons/io5";
 
 export default function AlbumPage() {
   return (
-    <div className="w-full h-screen flex bg-[#F5F5F5] relative overflow-hidden">
+    <div className="w-full min-h-screen flex bg-[#F5F5F5] relative overflow-hidden">
       {/* Overlay Blur */}
       <div className="absolute inset-0 backdrop-blur-md z-0"></div>
 
       {/* Page Content */}
       <div className="relative z-10 flex w-full h-full">
         {/* Sidebar */}
-        <div className="w-[350px] h-full bg-gradient-to-b from-[#00C9FF]/70 to-[#92FE9D]/70 backdrop-blur-lg shadow-lg rounded-tr-3xl rounded-br-3xl p-6 border border-white/30">
+        <div className="w-[350px] h-screen bg-gradient-to-b from-[#00C9FF]/70 to-[#92FE9D]/70 backdrop-blur-lg shadow-lg rounded-tr-3xl rounded-br-3xl p-6 border border-white/30">
           <div className="flex items-center gap-3 mb-8">
             <Image src="/SCreen/logo.png" width={48} height={48} alt="logo" />
             <h2 className="text-xl font-semibold">Green Mind</h2>
@@ -42,9 +46,9 @@ export default function AlbumPage() {
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 overflow-y-auto h-screen">
           {/* Navbar */}
-          <div className="flex justify-end items-center gap-4 mb-8 bg-white/0 backdrop-blur-md p-4 rounded-xl shadow">
+          <div className="flex justify-end items-center gap-4 mb-8 backdrop-blur-md p-4 rounded-xl shadow">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -89,7 +93,7 @@ export default function AlbumPage() {
           </div>
 
           {/* Content */}
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-6 pb-20">
             {/* Left Cards */}
             <div className="col-span-2 grid grid-cols-2 gap-6">
               <PlantCard status="Healthy" statusColor="green" />
@@ -124,6 +128,7 @@ export default function AlbumPage() {
 }
 
 /* COMPONENTS */
+
 function MenuItem({ title, icon, active, href }) {
   return (
     <Link href={href}>
@@ -149,6 +154,7 @@ function PlantCard({ status, statusColor }) {
       <div className="flex-1">
         <h3 className="font-semibold text-green-600">Aloevera</h3>
         <p className="text-sm text-gray-500">Scanned: 12 Nov 2025</p>
+
         <span
           className={`inline-block mt-2 px-4 py-1 rounded-full text-white text-sm
           ${statusColor === "green" ? "bg-green-500" : "bg-red-500"}`}
