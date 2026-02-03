@@ -85,8 +85,10 @@ export default function AiScanPage() {
         {/* ================= Main ================= */}
         <div className="flex-1 p-6 overflow-y-auto h-full">
           {/* Navbar */}
-            <div className="flex justify-end items-center gap-4 mb-8 backdrop-blur-md p-4 rounded-xl shadow relative z-[999]">
-            <Link href="/">Home</Link>
+          <div className="flex justify-end items-center gap-4 mb-8 backdrop-blur-md p-4 rounded-xl shadow relative z-[999]">
+            <Link href="/landing" className="hover:text-green-600 transition">
+              Home
+            </Link>
 
             <IoNotificationsOutline className="text-2xl cursor-pointer" />
 
@@ -115,9 +117,7 @@ export default function AiScanPage() {
                     Settings
                   </Link>
 
-                  <button
-                    className="flex items-center gap-2 w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 transition"
-                  >
+                  <button className="flex items-center gap-2 w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 transition">
                     <IoLogOutOutline />
                     Logout
                   </button>
@@ -166,10 +166,10 @@ export default function AiScanPage() {
             {/* Green Character */}
             <Image
               src="/SCreen/Group 45.png"
-              width={220}
-              height={220}
+              width={190}
+              height={190}
               alt="green character"
-              className="absolute -top-[40px] right-[120px] z-10"
+              className="absolute -top-[110px] right-[120px] z-10"
             />
           </div>
 
@@ -214,7 +214,12 @@ export default function AiScanPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-20">
             {/* XP */}
             <div className="bg-white rounded-3xl shadow-md p-8 flex items-center gap-5">
-              <Image src="/SCreen/tree.png" width={120} height={90} alt="tree" />
+              <Image
+                src="/SCreen/tree.png"
+                width={120}
+                height={90}
+                alt="tree"
+              />
 
               <div>
                 <h3 className="text-green-600 font-bold text-lg">+2 XP!</h3>

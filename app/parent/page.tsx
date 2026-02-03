@@ -150,7 +150,7 @@ export default function ParentDashboard() {
         <div className="flex-1 p-6 overflow-y-auto h-full">
           {/* Navbar */}
           <div className="flex justify-end items-center gap-4 mb-8 backdrop-blur-md p-4 rounded-xl shadow relative z-[999]">
-            <Link href="/" className="hover:text-green-600 transition">
+            <Link href="/landing" className="hover:text-green-600 transition">
               Home
             </Link>
 
@@ -216,7 +216,7 @@ export default function ParentDashboard() {
               title="Lessons"
               subtitle="Completed"
               value="5"
-              icon="/SCreen/book.png"
+              icon="/SCreen/Book.png"
             />
             <StatCard
               title="Plants"
