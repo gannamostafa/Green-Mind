@@ -132,6 +132,8 @@ export default function GamesPage() {
                 <span className="text-white text-2xl font-semibold">
                   Puzzle
                 </span>
+
+
               </div>
 
               {/* Memory */}

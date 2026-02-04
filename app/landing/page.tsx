@@ -98,7 +98,7 @@ export default function HomePage() {
             <Feature
               title="Positive Education"
               desc="Build empathy and kindness"
-              img="/SCreen/le-1.jpg"
+              img="/SCreen/le-1.jpg" 
             />
             <Feature
               title="Learning by Playing"
@@ -121,12 +121,16 @@ export default function HomePage() {
             How Green Mind Works
           </h2>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 gap-50 p-10 ">
             <Step num="1" title="Learn" img="/SCreen/learn.jpg" />
             <Step num="2" title="Play" img="/SCreen/play.jpg" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-50 mt-10 p-10 ">
             <Step num="3" title="Scan" img="/SCreen/scan.png" />
             <Step num="4" title="Grow" img="/SCreen/grow.jpg" />
           </div>
+
         </div>
       </section>
 
@@ -146,7 +150,7 @@ export default function HomePage() {
             </ul>
 
             <Image
-              src="/SCreen/child.png"
+              src="/SCreen/.png"
               width={300}
               height={250}
               alt="child"
