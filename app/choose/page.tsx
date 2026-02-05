@@ -1,10 +1,9 @@
 "use client";
 import Link from "next/link";
-// export default function ButtonPage() 
- 
+
 export default function SelectRole() {
   return (
-    <div className=" min-h-screen relative flex flex-col items-center justify-start pt-14">
+    <div className="min-h-screen relative flex flex-col items-center justify-start pt-14">
 
       {/* BACKGROUND IMAGE */}
       <div
@@ -18,71 +17,51 @@ export default function SelectRole() {
       <div className="absolute inset-0 bg-white/10" />
 
       {/* CONTENT */}
-      <div className="relative z-5 flex flex-col items-center">
-        
-{/* <h1 className="text-[45px] font-bold mb-10">
-  Let’s get started! Please select your role
-</h1> */}
+      <div className="relative z-10 flex flex-col items-center">
+        <h1 className="text-[45px] font-bold mb-10 whitespace-nowrap overflow-x-auto text-center">
+          Let’s get started! Please select your role
+        </h1>
 
-<h1 className="text-[45px] font-bold mb-10 whitespace-nowrap overflow-x-auto">
-  Let’s get started! Please select your role
-</h1>
+        <div className="flex gap-20 flex-wrap justify-center mt-5">
 
+          {/* PARENT CARD */}
+          <div className="w-[270px] h-[350px] bg-[#F6FF4B] rounded-2xl shadow-xl flex flex-col items-center p-4
+                          transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div className="flex-1"></div>
 
-        <div className="flex gap-20">
-          
+            {/* الصورة مع Hover */}
+            <img
+              src="/sCreen/Union.png"
+              className="w-[140px] h-[170px] rounded-xl object-cover transform transition-transform duration-300 hover:scale-110"
+            />
 
-<div className="flex gap-20 justify-center mt-5">
-  {/* PARENT CARD */}
-  <div className="w-[270px] h-[350px] bg-[#F6FF4B] rounded-2xl shadow-xl flex flex-col items-center p-4">
-    {/* عنصر فاضي لدفع الصورة للنص تقريبًا */}
-    <div className="flex-1"></div>
+            <Link href="/parent">
+              <button className="mt-2 bg-[#4C0000] text-white w-[150px] py-0 rounded-xl text-[22px] font-medium cursor-pointer">
+                I’m a parent
+              </button>
+            </Link>
 
-    {/* الصورة */}
-    <img
-      src="/sCreen/Union.png"
-      className="w-[140px] h-[170px] rounded-xl object-cover"
-    /> 
+            <div className="flex-1"></div>
+          </div>
 
-   <Link href="/parent">
-    <button className="mt-2 bg-[#4C0000] text-white w-[150px] py-0 rounded-xl text-[22px] font-medium cursor-pointer ">
-      I’m a parent
-    </button>
-     </Link>
+          {/* CHILD CARD */}
+          <div className="w-[270px] h-[350px] bg-[#FFD9D3] rounded-2xl shadow-xl flex flex-col items-center p-4
+                          transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div className="flex-1"></div>
 
-    {/* مسافة أسفل البوكس (اختياري) */}
-    <div className="flex-1"></div>
-  </div>
+            <img
+              src="/sCreen/child.png"
+              className="w-[140px] h-[170px] rounded-xl object-cover transform transition-transform duration-300 hover:scale-110"
+            />
 
-  {/* CHILD CARD */}
-  <div className="w-[270px] h-[350px] bg-[#FFD9D3] rounded-2xl shadow-xl flex flex-col items-center p-4">
-    <div className="flex-1"></div>
+            <Link href="/child">
+              <button className="mt-2 bg-[#4C0000] text-white w-[150px] py-0 rounded-xl text-[22px] font-medium cursor-pointer">
+                I’m a child
+              </button>
+            </Link>
 
-    <img
-      src="/sCreen/child.png"
-      className="w-[140px] h-[170px] rounded-xl object-cover"
-    />  
-
-
-
-     <Link href="/child">
-      <button
-      className="mt-2 bg-[#4C0000] text-white w-[150px] py-0 rounded-xl text-[22px] font-medium cursor-pointer"
-     >
-        I’m a child
-      </button>
-   </Link>
-
-
-
-
-    <div className="flex-1"></div>
-  </div>
-</div>
-
-
-
-
+            <div className="flex-1"></div>
+          </div>
 
         </div>
       </div>

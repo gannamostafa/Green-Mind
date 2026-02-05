@@ -78,6 +78,11 @@ export default function AiScanPage() {
               href="/ai-scan"
               active
             />
+             <MenuItem
+              title="Tree Growth"
+              icon="/SCreen/tree-gro.png"
+              href="/growth"
+            />
             <MenuItem title="Album" icon="/SCreen/album.png" href="/album" />
           </div>
         </div>
@@ -224,14 +229,14 @@ export default function AiScanPage() {
               <div>
                 <h3 className="text-green-600 font-bold text-lg">+2 XP!</h3>
                 <p className="text-sm text-gray-600">
-                  Scan plants to grow your tree 🌳
+                  Scnning your Real Plants Help You Grow Your Tree 🌳
                 </p>
               </div>
             </div>
 
             {/* Recent */}
             <div className="bg-white rounded-3xl shadow-md p-8">
-              <h3 className="font-semibold mb-4">Recent Scans</h3>
+              <h3 className="font-semibold mb-4">Recent Plant You Scanned</h3>
 
               <div className="flex gap-4 flex-wrap">
                 {recentScans.slice(0, 4).map((img, i) => (
