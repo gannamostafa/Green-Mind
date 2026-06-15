@@ -42,21 +42,20 @@ Children can upload plant images, and the AI module provides:
 
 ## 🧩 System Architecture (Updated to Firebase Backend)
 
-```
 [ React Frontend ]
-        |
-        ▼
+|
+▼
 [ Firebase Authentication ]
-        |
-        ▼
+|
+▼
 [ Firestore Database ] ---- [ Firebase Storage ]
-        |
-        ▼
+|
+▼
 [ Firebase Cloud Functions ]
-        |
-        ▼
+|
+▼
 [ Python AI Module (Plant Recognition API) ]
-```
+
 
 ---
 
@@ -105,7 +104,6 @@ Screens included:
 
 ## 📂 Folder Structure (Updated with Firebase Backend)
 
-```
 GreenMind/
 │
 ├── frontend/                  # React.js interface
@@ -131,18 +129,7 @@ GreenMind/
 │   └── GreenMindData.xlsx
 │
 └── README.md
-```
 
----
-
-## 👩‍💻 Team Roles
-
-| Team          | Responsibilities                                                                                         |
-| ------------- | -------------------------------------------------------------------------------------------------------- |
-| Frontend Team | Design and build the React interface using UI/UX designs from Figma                                      |
-| Backend Team  | Implement Firebase backend (Auth, Firestore, Storage, Cloud Functions) and secure all backend operations |
-| AI Team       | Train and integrate the plant-recognition model and connect it with Firebase Cloud Functions             |
-| Database Team | Prepare and manage initial datasets; maintain Firestore structure and optimize queries                   |
 
 ---
 
@@ -156,8 +143,30 @@ GreenMind/
 
 ---
 
-## 🪪 License & Credits
+## 👨‍🏫 Project Supervision
+
+We express our deepest gratitude to our academic supervisors for their guidance and support throughout this project:
+
+* **Supervised by:** Dr. Marwa Anany
+* **Teaching Assistant:** Eng. Mohamed Yasser
+
+---
+
+## 👥 Team Credits
+
+This project was proudly developed by the **Green Mind Team**:
+
+* **Janna Mostafa Abdelaziz**
+* **Abdelrahman Jaber**
+* **Maryam Ahmed Fathy**
+* **Maryam Ashraf**
+* **Maryam Ali Kamal**
+* **Maryam Abdelrahman**
+* **Mahmoud Sebaei**
+
+---
+
+## 🪪 License
 
 This project is developed as part of a **Graduation Project** at *Culture and Science City*.
 All rights reserved © 2025 **Green Mind Team**.
->>>>>>> a8557774fe7031a622c905eb78c375c3264fad87
