@@ -103,7 +103,7 @@ Screens included:
 ---
 
 ## 📂 Folder Structure (Updated with Firebase Backend)
-
+```
 GreenMind/
 │
 ├── frontend/                  # React.js interface
@@ -129,10 +129,9 @@ GreenMind/
 │   └── GreenMindData.xlsx
 │
 └── README.md
-
+```
 
 ---
-
 ## 🔮 Future Enhancements
 
 * Hardware integration (sensors to monitor real plants)
