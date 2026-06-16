@@ -161,7 +161,7 @@ This project was proudly developed by the **Green Mind Team**:
 * **Maryam Ashraf**
 * **Maryam Ali Kamal**
 * **Mariam Abdelrahman**
-* **Mahmoud Sebaei**
+* **Mahmoud Sebaey**
 
 ---
 
