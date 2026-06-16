@@ -155,12 +155,12 @@ We express our deepest gratitude to our academic supervisors for their guidance 
 
 This project was proudly developed by the **Green Mind Team**:
 
-* **Janna Mostafa Abdelaziz**
-* **Abdelrahman Jaber**
+* **Jannah Mostafa Abdelaziz**
+* **Abdelrahman Gaber**
 * **Maryam Ahmed Fathy**
 * **Maryam Ashraf**
 * **Maryam Ali Kamal**
-* **Maryam Abdelrahman**
+* **Mariam Abdelrahman**
 * **Mahmoud Sebaei**
 
 ---
